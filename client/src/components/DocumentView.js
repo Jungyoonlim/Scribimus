@@ -1,3 +1,4 @@
+// Hook { useState } to display the document's title and content
 import React, { useState } from "react";
 
 // need to access and display the list of documents
