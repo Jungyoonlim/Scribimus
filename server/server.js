@@ -33,3 +33,9 @@ app.get('/login', (req, res) => {
 app.get('/login', (req, res) => {
     res.send('Placeholder for user login');
 });
+
+// Start the server, make it listen to the specified port
+// When the server starts, will log a msg to the console
+app.listen(port, () => {
+    console.log(`Server is running at http://localhost:${port}`);
+});
