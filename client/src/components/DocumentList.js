@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
-function DocumentView({document}) {
-    const { title, content } = document;
+function Document({document}) {
     return(
         <div>
             <h1>{document.title}</h1>
@@ -9,3 +8,13 @@ function DocumentView({document}) {
         </div>
     )
 };
+
+function DocumentList(){
+    return(
+        <div>
+            <Document key = {document.id} document = {document} />
+        </div>
+    )
+}; 
+
+export default DocumentList;
